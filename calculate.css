@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*背景样式*/
+body {
+    background-image: url("../cover.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*容器*/
+#wrapper {
+    width: 600px;
+    height: 550px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F1C87D;
+    border-radius: 15px;
+    box-shadow: 0 0 30px grey;
+    text-align: center;
+}
+
+
+
+/*计算器*/
+#calculator {
+    width: 320px;
+    margin: 60px auto;
+    background:red;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #1e1e1e;
+}
+
+/*屏幕*/
+.screen {
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 4px;
+    box-sizing: border-box;
+    border-top: inset 3px #edeeef;
+    border-left: inset 3px #edeeef;
+    box-shadow: 0 0 5px #1e1e1e;
+}
+
+/*键盘*/
+.calcu-btn {
+    width: 290px;
+
+    margin: 0 auto;
+}
+
+.calcu-btn ul {
+    list-style: none;
+    font-size: 0;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.calcu-btn ul li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background: #fdfdfe;
+    font-size: 18px;
+    color: #5c5c5c;
+    font-weight: bolder;
+    margin: 4px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #1e1e1e;
+}
+
+#note {
+    color: #be0000;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 15px
+}
+
+.calcu-btn ul li:hover {
+    background: #e0e0e1;
+    cursor: pointer;
+}
+
+.calcu-btn ul li:active {
+    background: #d19b37;
+    cursor: pointer;
+}
+
+.calcu-btn .tool {
+    background: #FFA83F;
+}
+
+.calcu-btn .tool1 {
+    background: #78DECC;
+    color: #fafafb;
+}
+
+.calcu-btn .dl {
+    width: 103px;
+}
+
+.calcu-btn .tool:hover {
+    background: #cc9834;
+}
+
+.calcu-btn .tool1:hover {
+    background: #5b5b5b;
+}
+
+.calcu-btn .tool:active {
+    background: #d19b37;
+    cursor: pointer;
+}
+
+.calcu-btn .tool1:active {
+    background: #d19b37;
+    cursor: pointer;
+}

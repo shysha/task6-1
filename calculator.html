@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="calculate.css">
+    <script src="calcula.js"></script>
+</head>
+<body>
+<!--包裹层-->
+<div id="wrapper">
+   
+    <!--计算器-->
+    <div id="calculator">
+        <form name="calculator" action="" method="get">
+            <!--计算器屏幕-->
+            <div class="calcu-screen">
+                <input type="text" name="numScreen" value="0" class="screen" onfocus="this.blur();"/>
+            </div>
+            <!--计算器键盘-->
+            <div class="calcu-btn">
+                <ul>
+                    <li class="tool dl" onclick="del()">←</li>
+                    <li class="tool dl" onclick="clearscreen()">C</li>
+                    <li class="tool1" onclick="opera(5)">%</li>
+                    <li onclick="command(7)">7</li>
+                    <li onclick="command(8)">8</li>
+                    <li onclick="command(9)">9</li>
+                    <li class="tool1" onclick="opera(6)">sin</li>
+                    <li class="tool1" onclick="opera(7)">cos</li>
+                    <li onclick="command(4)">4</li>
+                    <li onclick="command(5)">5</li>
+                    <li onclick="command(6)">6</li>
+                    <li class="tool1" onclick="opera(1)">+</li>
+                    <li class="tool1" onclick="opera(2)">-</li>
+                    <li onclick="command(1)">1</li>
+                    <li onclick="command(2)">2</li>
+                    <li onclick="command(3)">3</li>
+                    <li class="tool1" onclick="opera(3)">×</li>
+                    <li class="tool1" onclick="opera(4)">÷</li>
+                    <li onclick="dzero()">00</li>
+                    <li onclick="command(0)">0</li>
+                    <li onclick="dot()">.</li>
+                    <li class="tool dl" onclick="equal()">=</li>
+                </ul>
+            </div>
+        </form>
+        <!--警告：被除数不能为0-->
+        <p id="note"></p>
+    </div>
+</div>
+</body>
+</html>
